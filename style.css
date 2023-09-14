@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Reset CSS */
+
+/* Estilos globais */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F5F5;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #FFF;
+}
+
+.menu__logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+}
+
+.menu__list__item {
+    margin-right: 20px;
+}
+
+.menu__list__item:last-child {
+    margin-right: 0;
+}
+
+.menu__list__item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Título */
+.title {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.title__profile {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.title__bio {
+    margin-bottom: 20px;
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+}
+
+.title__network__item {
+    margin-right: 20px;
+}
+
+.title__network__item:last-child {
+    margin-right: 0;
+}
+
+.title__network__item a {
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Seções (Sobre, Habilidades, etc.) */
+.section {
+    padding: 40px 0;
+}
+
+.section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Habilidades */
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills__box {
+    text-align: center;
+    margin: 10px;
+}
+
+.skills__img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Hobbies */
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobbies__box {
+    text-align: center;
+    margin: 10px;
+}
+
+.hobbies__img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Formação Acadêmica */
+.academic__courses__box {
+    text-align: center;
+    margin: 10px;
+}
+
+.academic__courses__item__img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Experiência Profissional */
+.experience__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.experience__img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Formulário de Contato */
+.formcontato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: #FFF;
+}
+
+.formcontato__img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.formcontato__text {
+    flex: 1;
+}
+
+.formcontato__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.formcontato__subtext {
+    margin-bottom: 20px;
+}
+
+.formcontato__form {
+    margin-top: 20px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.formcontato__input::placeholder,
+.formcontato__textarea::placeholder {
+    color: #FFF;
+}
+
+.formcontato__botao {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFF;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #FFF;
+}
